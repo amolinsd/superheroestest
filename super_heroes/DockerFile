@@ -1,0 +1,3 @@
+FROM openjdk:8-alpine
+ADD target/super_heroes.jar /usr/share/app.jar
+ENTRYPOINT ["java","-jar","/super_heroes-1.0.jar"]
