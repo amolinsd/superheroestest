@@ -17,7 +17,7 @@ import com.project.superheroes.model.Superhero;
 import com.project.superheroes.service.SuperheroService;
 
 @RestController
-public class SupeheroController {
+public class SuperheroController {
 	
 	@Autowired
 	private SuperheroService superheroService;

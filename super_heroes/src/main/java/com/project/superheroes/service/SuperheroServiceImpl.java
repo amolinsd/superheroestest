@@ -40,12 +40,9 @@ public class SuperheroServiceImpl implements SuperheroService {
 			superheroUpdate.setSuperPower(superhero.getSuperPower());
 			superheroRepository.save(superheroUpdate);
 			
-			long startTime = ExecutionTime.startTime;
-			long finishTime = System.nanoTime() - startTime;
 			
+			long finishTime = System.nanoTime() - ExecutionTime.startTime;			
 			System.out.println("Execution time: " + finishTime + " nanoseconds");
-			
-			System.out.println(SuperheroServiceImpl.class.getProtectionDomain().getCodeSource().getLocation());
 			
 			return superheroUpdate;
 		}else {
